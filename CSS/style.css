@@ -12,8 +12,8 @@ body {
         background-color: rgb(149, 189, 202);
         grid-area: 2 / 2 / 3 / 3;
         display: grid;
-        grid-template-columns: 0.05fr 1fr 1fr 2fr 0.05fr;
-        grid-template-rows: 0.05fr 1fr 1fr 1fr 1fr 1fr 3fr 0.05fr;
+        grid-template-columns: 0.15fr 1fr 1fr 2fr 0.15fr;
+        grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr 3.5fr 0.05fr;
         gap: 10px;
         grid-template-areas: 
         ". . . . ."
@@ -29,7 +29,8 @@ body {
 #foto {
     grid-area: cFoto;
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
 #nombre {
@@ -44,18 +45,51 @@ body {
     grid-area: cDatosE;
 }
 
-#nombre {
-    grid-area: cDatosN;
+#nSocio {
+    grid-area: cDatosS;
 }
+
+#nombreV {
+    grid-area: cIDatosN;
+}
+
+#apellidoV {
+    grid-area: cIDatosA;
+}
+
+#eMailCV {
+    grid-area: cIDatosE;
+}
+
+#nSocioV {
+    grid-area: cIDatosS;
+}
+
+#bioTitulo {
+    grid-area: cBioT;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
 #biografia {
-    background-color: white;
-    border-radius: 20px;
-}
-.datos {
-    grid-area: cDatos;
-}
-
-
-.bio {
     grid-area: cBio;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 20px;
+    padding-bottom: 1px;
+}
+
+.datos {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.datosV {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 1px;
 }
