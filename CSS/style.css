@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(255, 244, 227);
+}
+#contenedor-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 4fr 2.5fr;
+    grid-template-rows: 8fr 10fr 8fr;
+    gap: 10px;
+
+} 
+#card {
+        background-color: rgb(149, 189, 202);
+        grid-area: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template-columns: 0.05fr 1fr 1fr 2fr 0.05fr;
+        grid-template-rows: 0.05fr 1fr 1fr 1fr 1fr 1fr 3fr 0.05fr;
+        gap: 10px;
+        grid-template-areas: 
+        ". . . . ."
+        ". cFoto cDatosN cIDatosN ."
+        ". cFoto cDatosA cIDatosA ."
+        ". cFoto cDatosE cIDatosE ."
+        ". cFoto cDatosS cIDatosS ."
+        ". cBioT cBioT cBioT ."
+        ". cBio cBio cBio ." 
+        ". . . . .";
+}
+
+#foto {
+    grid-area: cFoto;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#nombre {
+    grid-area: cDatosN;
+}
+
+#apellido {
+    grid-area: cDatosA;
+}
+
+#eMailC {
+    grid-area: cDatosE;
+}
+
+#nombre {
+    grid-area: cDatosN;
+}
+#biografia {
+    background-color: white;
+    border-radius: 20px;
+}
+.datos {
+    grid-area: cDatos;
+}
+
+
+.bio {
+    grid-area: cBio;
+}
