@@ -12,18 +12,18 @@ body {
         background-color: rgb(149, 189, 202);
         grid-area: 2 / 2 / 3 / 3;
         display: grid;
-        grid-template-columns: 0.15fr 1fr 1fr 2fr 0.15fr;
+        grid-template-columns: 0.15fr 1fr 1fr 0.25fr 2fr 0.15fr;
         grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr 3.5fr 0.05fr;
         gap: 10px;
         grid-template-areas: 
-        ". . . . ."
-        ". cFoto cDatosN cIDatosN ."
-        ". cFoto cDatosA cIDatosA ."
-        ". cFoto cDatosE cIDatosE ."
-        ". cFoto cDatosS cIDatosS ."
-        ". cBioT cBioT cBioT ."
-        ". cBio cBio cBio ." 
-        ". . . . .";
+        ". . . . . ."
+        ". cFoto cDatosN . cIDatosN ."
+        ". cFoto cDatosA . cIDatosA ."
+        ". cFoto cDatosE . cIDatosE ."
+        ". cFoto cDatosS . cIDatosS ."
+        ". cBioT cBioT cBioT cBioT ."
+        ". cBio cBio  cBio cBio ." 
+        ". . . . . .";
 }
 
 #foto {
