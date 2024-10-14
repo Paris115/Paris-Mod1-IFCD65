@@ -17,17 +17,17 @@ body {
         gap: 10px;
         grid-template-areas: 
         ". . . . . ."
-        ". cFoto cDatosN . cIDatosN ."
-        ". cFoto cDatosA . cIDatosA ."
-        ". cFoto cDatosE . cIDatosE ."
-        ". cFoto cDatosS . cIDatosS ."
+        ". cFotoV cDatosN . cIDatosN ."
+        ". cFotoV cDatosA . cIDatosA ."
+        ". cFotoV cDatosE . cIDatosE ."
+        ". cFotoV cDatosS . cIDatosS ."
         ". cBioT cBioT cBioT cBioT ."
         ". cBio cBio  cBio cBio ." 
         ". . . . . .";
 }
 
 #foto {
-    grid-area: cFoto;
+    grid-area: cFotoV;
     background-color: white;
     border: 2px solid black;
     border-radius: 8px;
